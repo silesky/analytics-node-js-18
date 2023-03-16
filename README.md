@@ -1,7 +1,6 @@
 # Development
-```
-nvm install
-nvm use
-yarn install
-yarn start
+```sh
+nvm use # switch to node version defined in .nvmrc
+npm install
+npm start
 ```
