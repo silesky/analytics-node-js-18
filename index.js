@@ -8,7 +8,6 @@ const analytics = new Analytics({
 }).on("error", console.error);
 
 
-
 analytics.track({ userId: "foo", event: `Hello from ${process.version}` }, (err, ctx) =>
   console.log(ctx, "Test Success!")
 );
