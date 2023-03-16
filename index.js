@@ -7,13 +7,8 @@ const analytics = new Analytics({
   maxEventsInBatch: 1,
 }).on("error", console.error);
 
-analytics.identify({
-  userId: "Demo",
-  traits: {
-    avatar: "foo",
-  },
-});
 
-analytics.track({ userId: "foo", event: "Demo" }, (err, ctx) =>
+
+analytics.track({ userId: "foo", event: `Hello from ${process.version}` }, (err, ctx) =>
   console.log(ctx, "Test Success!")
 );
