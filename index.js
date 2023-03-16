@@ -15,5 +15,5 @@ analytics.identify({
 });
 
 analytics.track({ userId: "foo", event: "Demo" }, (err, ctx) =>
-  console.log(ctx)
+  console.log(ctx, "Test Success!")
 );
